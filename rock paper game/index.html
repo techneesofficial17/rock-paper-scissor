@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <div class="header">
+        <h2 id="headertext">Game</h2>
+        <p class="won">Player VS Bot</p>
+         <h5 class="score">P Score : <span id="pscore">0</span></h5>
+         <h5 class="score">B Score : <span id="bscore">0</span></h5>
+         <h5 class="score">Draws : <span id="draws">0</span></h5>
+    </div>
+<div class="center">
+    <div class="choose">
+        <div class="text"><h2 id="titletext">Make Your Choice ! </h2></div>
+        <div class="pics">
+            <img class="choices sci" onclick="click1(); blind();" src="pic/sci.png" id="0" alt="hand picture with random">
+            <img class="choices rock" onclick="click2(); blind();" src="pic/rock.png" id="1" alt="hand picture with random">
+            <img class="choices paper" onclick="click3(); blind();" src="pic/paper.jpg" id="2" alt="hand picture with random">
+        </div>
+        <div class="animate">
+            <img src="pic/rock.png" class="img1"  alt="">
+            <img src="pic/sci.png" class="img2"  alt="">
+            <img src="pic/paper.jpg" class="img3"  alt="">
+        </div>
+    </div>
+</div>
+    <div class="result">
+        <div class="texts">
+            <h2>Player Choosed</h2>
+            <h2>Bot Choosed</h2>
+        </div>
+        <div class="resultgiven">
+            <img src="" class="pchosed" id="playerchoosed" alt="">
+            <h3 id="resulttext"></h3>
+            <img src="" class="bchosed" id="botchoosed" alt="">
+        </div>
+    </div>
+
+    <button class="pag" id="playAgain">Play Again</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
